@@ -56,6 +56,22 @@ span {
   margin: 0 auto;
 }
 
+.secondary-heading {
+  text-transform: capitalize;
+  color: #333;
+  font-size: 8.6rem;
+  margin-bottom: 2.4rem;
+}
+
+.subheading {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #fd900e;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+
 /*******************************/
 /**********NAVIGATION***********/
 /*******************************/
@@ -112,13 +128,6 @@ span {
   height: 92vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-}
-
-.hero--heading {
-  text-transform: capitalize;
-  color: #333;
-  font-size: 8.6rem;
-  margin-bottom: 2.4rem;
 }
 
 .description-txt {
@@ -184,4 +193,44 @@ span {
   height: 3.2rem;
   filter: brightness(0%);
   opacity: 50%;
+}
+
+.section--secondary-catchphrase {
+  padding: 12.8rem 0;
+  background-color: #f1f1ef;
+}
+
+.catchphrase-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: center;
+}
+
+.catchphrase-heading {
+  grid-column: 1/-1;
+  word-spacing: 1rem;
+  font-size: 9.8rem;
+  margin-bottom: 6.4rem;
+}
+
+.catchphrase-description {
+  color: #333;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  padding: 0 9.6rem 0 0;
+  display: inline-block;
+  margin-bottom: 6.4rem;
+}
+
+/* SPACING SYSTEM (px)
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+  FONT SIZE SYSTEM (px)
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+.cta-link:link,
+.cta-link:visited,
+.cta-link:hover,
+.cta-link:active {
+  color: #fd900e;
+  text-decoration: underline;
+  font-size: 1.6rem;
 }
