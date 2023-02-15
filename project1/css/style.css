@@ -121,6 +121,12 @@ span {
   margin-bottom: 2.4rem;
 }
 
+.description-txt {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 2.4rem;
+}
+
 .catchphrase-imgs {
   display: flex;
   margin-bottom: 2.4rem;
@@ -150,3 +156,7 @@ span {
 .hero-img-box img {
   width: 100%;
 }
+
+/*******************************/
+/***********ABOUT US************/
+/*******************************/
