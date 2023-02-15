@@ -254,7 +254,8 @@ span {
 }
 
 .collections-mid img,
-.collections-right img {
+.collections-right img,
+.collections-left img {
   width: 100%;
 }
 
@@ -329,4 +330,51 @@ span {
 .collections-card-container p {
   font-size: 2rem;
   color: #333;
+}
+
+.featured-collections {
+  padding: 4.8rem 0;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.featured-collection-container {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2rem;
+}
+
+.hoodie-collection {
+  background-image: url(../media/collections/hoodie-collection.jpeg);
+  background-position: right;
+  height: 60rem;
+  grid-row: 1/-1;
+}
+
+.pants-collection {
+  background-image: url(../media/collections/pants-collection.jpeg);
+  background-position: center;
+}
+
+.shoes-collection {
+  background-image: url(../media/collections/shoes-collection.jpeg);
+  background-position: bottom;
+}
+
+.featured-collection-container .top-right-arrow-button {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+}
+
+.collection-type-heading {
+  font-size: 5.2rem;
+  color: #333;
+  word-spacing: 100vw;
 }
