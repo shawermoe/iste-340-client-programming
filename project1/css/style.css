@@ -63,6 +63,13 @@ span {
   margin-bottom: 2.4rem;
 }
 
+.tertiary-heading {
+  text-transform: capitalize;
+  color: #333;
+  font-size: 6.4rem;
+  margin-bottom: 2.4rem;
+}
+
 .subheading {
   font-size: 1.6rem;
   font-weight: 500;
@@ -222,10 +229,6 @@ span {
   margin-bottom: 6.4rem;
 }
 
-/* SPACING SYSTEM (px)
-  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-  FONT SIZE SYSTEM (px)
-  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
 .cta-link:link,
 .cta-link:visited,
 .cta-link:hover,
@@ -233,4 +236,97 @@ span {
   color: #fd900e;
   text-decoration: underline;
   font-size: 1.6rem;
+}
+
+.section--collections {
+  padding: 9.6rem 0;
+}
+.collections-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2.4rem;
+}
+
+.collections-mid,
+.collections-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.collections-mid img,
+.collections-right img {
+  width: 100%;
+}
+
+.collection-description {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.see-more-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2.4rem;
+}
+
+.see-more-container p {
+  font-size: 2rem;
+  color: #333;
+  width: 50%;
+}
+
+.top-right-arrow-button {
+  border-radius: 50%;
+  border: 1px #000 solid;
+
+  height: 25px;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background-color: #000;
+}
+
+.top-right-arrow-button svg {
+  stroke: #fff;
+}
+
+.top-right-arrow-button:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.top-right-arrow-button:hover svg {
+  stroke: #000;
+}
+.secondary-top-right-arrow-button {
+  border: 1px #333 solid;
+  background-color: #fff;
+}
+
+.secondary-top-right-arrow-button svg {
+  stroke: #000;
+}
+.secondary-top-right-arrow-button:hover {
+  background-color: #000;
+}
+
+.secondary-top-right-arrow-button:hover svg {
+  stroke: #fff;
+}
+
+.collections-card-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2.4rem;
+}
+
+.collections-card-container p {
+  font-size: 2rem;
+  color: #333;
 }
