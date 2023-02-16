@@ -61,7 +61,7 @@ export class OutfitView {
    *
    * @returns {undefined}
    */
-  renderoutfit() {
+  renderOutfit() {
     let imgSrc = "./media/outfits/";
 
     this.selects.forEach((select) => {

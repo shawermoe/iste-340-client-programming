@@ -60,12 +60,12 @@ export class OutfitController {
     }
 
     //2.2. Update the outfitDiv
-    this.view.renderoutfit();
+    this.view.renderOutfit();
   };
 
   handleFormSubmit = (event) => {
     //prevent the default action of a form (prevent submitting it)
     event.preventDefault();
-    //TODO
+    this.model.persist();
   };
 }
