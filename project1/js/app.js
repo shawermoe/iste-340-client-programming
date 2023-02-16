@@ -7,6 +7,11 @@
  * The controller monitors user interaction with the view and communicates
  * any changes to the model.
  */
+
+import { OutfitController } from "./controller/OutfitController.js";
+import { OutfitModel } from "./model/OutfitModel.js";
+import { OutfitView } from "./view/OutfitView.js";
+
 const app = new OutfitController(
   new OutfitModel("casual", "hs", "blue"),
   new OutfitView()

@@ -7,7 +7,7 @@
  * The view holds references to all UI elements with which the user interacts with
  * AND for which the event-handling mechanism needs to be implemented.
  */
-class OutfitView {
+export class OutfitView {
   constructor() {
     this.outfitForm = document.querySelector("#form-outfit");
     this.outfitDiv = document.querySelector("#div-outfit");

@@ -5,7 +5,7 @@
  * model does not talk directly to a view, instead is made available to a controller
  * which accesses it when needed.
  */
-class OutfitModel {
+export class OutfitModel {
   /**
    * Creates an object representing the outfit model.
    *

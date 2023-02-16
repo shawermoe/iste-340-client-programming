@@ -10,7 +10,7 @@
  * controller's methods are event handlers.
  *
  */
-class OutfitController {
+export class OutfitController {
   /**
    * Creates an object representing the outfit controller.
    *
