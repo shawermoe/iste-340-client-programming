@@ -5,45 +5,56 @@
  * model does not talk directly to a view, instead is made available to a controller
  * which accesses it when needed.
  */
+import { selectData } from "../store/selectData.js";
+
 export class OutfitModel {
+  static store = selectData; // external resource
+
   /**
    * Creates an object representing the outfit model.
    *
-   * @param {String} wearType - The wear type of the outfit.
+   * @param {String} type - The wear type of the outfit.
    * @param {String} clothes - The clothes of the outfit.
    * @param {String} color - The color of the outfit.
    * @returns {OutfitModel} The object representing the outfit model.
    */
-  constructor(wearType, clothes, color) {
-    this._wearType = wearType;
-    this._clothes = clothes;
-    this._color = color;
+  constructor() {
+    this.type = "undefined";
+    this.clothes = "undefined";
+    this.color = "undefined";
   }
 
-  get wearType() {
-    return this._wearType;
+  getProperties() {
+    return Object.keys(this);
   }
 
-  get clothes() {
-    return this._clothes;
+  getOptions(selectID) {
+    // 1. extract the data from the external resource (AnimalModel.store).
+    let options; // a JS object
+    switch (selectID) {
+      case "type":
+        options = Object.keys(OutfitModel.store);
+        // ["casual","sporty"]
+        break;
+      case "clothes":
+        options = Object.keys(OutfitModel.store[this.type]);
+        // ["shirt", "pants"]} OR ["dress", "skirt"]
+        break;
+      case "color":
+        options = Object.keys(OutfitModel.store[this.type][this.clothes]);
+        // ["grey", "red"]} OR ["brown", "blue]
+        break;
+    }
+
+    // 2. return select options
+    return options;
   }
 
-  get color() {
-    return this._color;
-  }
-
-  set wearType(wearType) {
-    this._wearType = wearType;
-    this._clothes = "undefined";
-    this._color = "undefined";
-  }
-
-  set clothes(clothes) {
-    this._clothes = clothes;
-    this._color = "undefined";
-  }
-
-  set color(color) {
-    this._color = color;
+  resetNextProperties(property) {
+    let properties = Object.keys(this);
+    let index = properties.indexOf(property);
+    while (++index < properties.length) {
+      this[properties[index]] = "undefined";
+    }
   }
 }
