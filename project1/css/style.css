@@ -38,6 +38,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -130,7 +131,7 @@ span {
 /*******************************/
 /*************HERO**************/
 /*******************************/
-.section--hero {
+#section--hero {
   align-items: center;
   height: 92vh;
   display: grid;
@@ -176,7 +177,7 @@ span {
 /*******************************/
 /********Brand partners*********/
 /*******************************/
-.section--partners {
+#section--partners {
   background-color: #fff4e7;
   padding: 4.8rem 0 4.8rem 0;
 }
@@ -202,7 +203,7 @@ span {
   opacity: 50%;
 }
 
-.section--secondary-catchphrase {
+#section--secondary-catchphrase {
   padding: 12.8rem 0;
   background-color: #f1f1ef;
 }
@@ -379,44 +380,16 @@ span {
   word-spacing: 100vw;
 }
 
-/*******************************/
-/************Reviews************/
-/*******************************/
-
-.reviews-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-.review-container {
-}
-.review-comment {
-}
-.review-author {
-  display: grid;
-  grid-template-columns: 50px auto;
-  grid-template-rows: auto auto;
-}
-.reviewer-img {
-  grid-row: 1/-1;
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-}
-.author-name {
-}
-.author-position {
-}
-
 /**************************/
 /* TESTIMONIALS SECTION */
 /**************************/
 
-.section--reviews {
+#section--reviews {
   padding: 9.6rem 0;
   background-color: #242424;
 }
 
-.section--reviews .tertiary-heading {
+#section--reviews .tertiary-heading {
   color: #fff;
 }
 
