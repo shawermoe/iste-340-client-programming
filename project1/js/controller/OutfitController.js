@@ -65,7 +65,7 @@ export class OutfitController {
 
   handleFormSubmit = (event) => {
     //prevent the default action of a form (prevent submitting it)
-    event.preventDefault();
+    // event.preventDefault();
     this.model.persist();
   };
 }

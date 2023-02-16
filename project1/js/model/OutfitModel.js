@@ -29,7 +29,7 @@ export class OutfitModel {
   }
 
   getOptions(selectID) {
-    // 1. extract the data from the external resource (AnimalModel.store).
+    // 1. extract the data from the external resource (OutfitModel.store).
     let options; // a JS object
     switch (selectID) {
       case "type":
@@ -60,7 +60,7 @@ export class OutfitModel {
 
   /**
    * Stores animal data accross browser sessions. Window.localStorage is used
-   * to store the model as a JSON string under the key 'animal'.
+   * to store the model as a JSON string under the key 'outfit'.
    *
    * @returns {undefined}
    * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage}
@@ -68,10 +68,5 @@ export class OutfitModel {
    */
   persist() {
     localStorage.setItem("outfit", JSON.stringify(this));
-
-    //Let's test if this is stored. Delete this from your project:
-    //        let animal = localStorage.getItem('animal');
-    //        console.log(animal === null ? 'No animal found in local storage' : JSON.parse(animal));
-    //        console.log(animal === null ? 'No animal found in local storage' : animal);
   }
 }

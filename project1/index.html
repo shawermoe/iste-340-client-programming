@@ -13,9 +13,18 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Outfits4You</title>
     <script src="./js/app.js" type="module"></script>
+
+    <script defer src="./vendor/modernizr-custom.js"></script>
   </head>
 
   <body>
+    <div id="overlay-container">
+      <h1>Browser is outdated</h1>
+      <h3>
+        Please update to newer browser or download newer browser to work with
+      </h3>
+    </div>
+
     <nav class="nav--bar container">
       <div class="nav--links-container">
         <ul>
@@ -441,7 +450,7 @@
       </div>
     </section>
     <section id="section--sign-up-form" class="container">
-      <form class="selection-form" id="form-outfit">
+      <form class="selection-form" id="form-outfit" action="form.html">
         <div id="div-outfit">
           <img
             src="./media/outfits/undefined-undefined.gif"
