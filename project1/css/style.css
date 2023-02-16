@@ -378,3 +378,68 @@ span {
   color: #333;
   word-spacing: 100vw;
 }
+
+/*******************************/
+/************Reviews************/
+/*******************************/
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.review-container {
+}
+.review-comment {
+}
+.review-author {
+  display: grid;
+  grid-template-columns: 50px auto;
+  grid-template-rows: auto auto;
+}
+.reviewer-img {
+  grid-row: 1/-1;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+.author-name {
+}
+.author-position {
+}
+
+/**************************/
+/* TESTIMONIALS SECTION */
+/**************************/
+
+.section--reviews {
+  padding: 9.6rem 0;
+  background-color: #242424;
+}
+
+.section--reviews .tertiary-heading {
+  color: #fff;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+}
+
+.testimonial-img {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+
+.testimonial-name {
+  font-size: 1.6rem;
+  color: #6f6f6f;
+}
